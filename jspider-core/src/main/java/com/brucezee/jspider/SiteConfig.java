@@ -1,11 +1,11 @@
 package com.brucezee.jspider;
 
-import com.brucezee.jspider.common.Charsets;
-import com.brucezee.jspider.downloader.httpclient.extended.NoopCookieSpecProvider;
-
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
+
+import com.brucezee.jspider.common.Charsets;
+import com.brucezee.jspider.downloader.httpclient.extended.NoopCookieSpecProvider;
 
 /**
  * 网络请求配置

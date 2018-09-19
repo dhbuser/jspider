@@ -1,5 +1,19 @@
 package com.brucezee.jspider;
 
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.ReentrantLock;
+
+import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.brucezee.jspider.common.Config;
 import com.brucezee.jspider.common.ThreadPool;
 import com.brucezee.jspider.common.utils.SpiderIOUtils;
@@ -17,19 +31,6 @@ import com.brucezee.jspider.pipeline.Pipeline;
 import com.brucezee.jspider.processor.PageProcessor;
 import com.brucezee.jspider.scheduler.QueueScheduler;
 import com.brucezee.jspider.scheduler.Scheduler;
-import org.apache.commons.collections.CollectionUtils;
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * 爬虫任务

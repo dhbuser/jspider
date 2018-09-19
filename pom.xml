@@ -39,6 +39,7 @@
         <module>jspider-selenium</module>
         <module>jspider-berkeley</module>
         <module>jspider-mongodb</module>
+	<module>jspider-extrator</module>
     </modules>
 
     <properties>
@@ -171,7 +172,7 @@
             <dependency>
                 <groupId>com.sleepycat</groupId>
                 <artifactId>je</artifactId>
-                <version>5.0.84</version>
+                <version>5.0.73</version>
             </dependency>
 
             <!--spring-->

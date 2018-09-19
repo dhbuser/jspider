@@ -1,13 +1,5 @@
 package com.brucezee.jspider;
 
-import com.brucezee.jspider.common.enums.ResponseType;
-import org.apache.commons.lang3.StringUtils;
-import org.apache.http.Header;
-import org.apache.http.HttpStatus;
-import org.jsoup.Jsoup;
-import org.jsoup.helper.StringUtil;
-import org.jsoup.nodes.Document;
-
 import java.io.Closeable;
 import java.io.IOException;
 import java.io.InputStream;
@@ -15,6 +7,15 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import org.apache.commons.lang3.StringUtils;
+import org.apache.http.Header;
+import org.apache.http.HttpStatus;
+import org.jsoup.Jsoup;
+import org.jsoup.helper.StringUtil;
+import org.jsoup.nodes.Document;
+
+import com.brucezee.jspider.common.enums.ResponseType;
 
 /**
  * 请求响应内容

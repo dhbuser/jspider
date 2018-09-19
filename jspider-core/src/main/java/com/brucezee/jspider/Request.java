@@ -1,14 +1,15 @@
 package com.brucezee.jspider;
 
-import com.brucezee.jspider.common.enums.ResponseType;
-import com.brucezee.jspider.common.utils.SpiderNumberUtils;
-import com.brucezee.jspider.common.utils.SpiderStrUtils;
-import org.apache.commons.lang3.StringUtils;
-import org.apache.http.HttpEntity;
-
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
+
+import org.apache.commons.lang3.StringUtils;
+import org.apache.http.HttpEntity;
+
+import com.brucezee.jspider.common.enums.ResponseType;
+import com.brucezee.jspider.common.utils.SpiderNumberUtils;
+import com.brucezee.jspider.common.utils.SpiderStrUtils;
 
 /**
  * 请求任务
